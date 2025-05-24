@@ -1,0 +1,21 @@
+{
+  "name": "Roo Code Headless Evaluation",
+  "dockerFile": "Dockerfile",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    },
+    "ghcr.io/devcontainers-contrib/features/pnpm:2": {}
+  },
+  "postCreateCommand": "bash .devcontainer/post-create-headless.sh",
+  "remoteUser": "node",
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
+  ],
+  "workspaceFolder": "/workspace",
+  "runArgs": ["--init"],
+  "containerEnv": {
+    "HEADLESS": "true"
+  }
+}
