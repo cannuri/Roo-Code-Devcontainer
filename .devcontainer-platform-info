@@ -1,8 +1,0 @@
-Host OS: linux
-Container OS: Linux 6.12.5-linuxkit
-Node Version: v20.19.1
-npm Version: 10.8.2
-pnpm Version: 10.11.0
-Git Version: git version 2.49.0
-Docker Client: Not available in container
-Date: Sat May 24 13:28:33 UTC 2025

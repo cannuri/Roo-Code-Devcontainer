@@ -36,3 +36,4 @@ Roo-Docs/
 .env
 .env.local
 .env.*.local
+.devcontainer-platform-info
